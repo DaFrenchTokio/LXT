@@ -2,12 +2,12 @@
 
 -----
 
-### <p align="center">👻 Sniff 👻</p>
+### <p align="center">👻 LxT 👻</p>
 
 <br><br>
 <p align="center">
 <strong>
-First of all, if you're looking for the <strong>BEST</strong> Roblox Lua Http Sniffer, you should check <a href="https://github.com/DaFrenchTokio/Sniff">Sniff</a>!
+First of all, if you're looking for the <strong>BEST</strong> Roblox Lua Encryption Method, you should check <a href="https://github.com/DaFrenchTokio/LXT">LxT</a>!
 <br><br>
   
 -----
@@ -15,12 +15,23 @@ First of all, if you're looking for the <strong>BEST</strong> Roblox Lua Http Sn
 ### <p align="center">🫧 How To Use It 🫧</p>
 
 ```
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/DaFrenchTokio/Sniff/main/hsniff.lua"),true))()
-Sniff_CoreConfig = {
-	results = {},
-	RConsoleprint = true,
-	SniffWebhooks = true
-}
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/DaFrenchTokio/LXT/main/execute.lua"),true))()
+local text = "Hello World"
+local key = 10
+	
+-- File encryption
+encrypted = LXT:Mypt(true,key,text)
+decrypted = LXT:Mypt(false,key,encrypted)
+
+print('Encrypted : ' .. encrypted)
+print('Decrypted : ' .. decrypted)
+	
+-- Normal encryption
+encrypted = LXT:Crypt(true,key,text)
+decrypted = LXT:Crypt(false,key,encrypted)
+
+print('Decrypted : ' .. encrypted.Value)
+print('Encrypted : ' .. decrypted.Value)
 ```
 
 -----
